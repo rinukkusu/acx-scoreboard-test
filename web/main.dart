@@ -4,7 +4,10 @@
 import 'package:angular2/platform/browser.dart';
 
 import 'package:acx_scoreboard_test/app_component.dart';
+import 'package:angular_components/angular_components.dart';
 
 void main() {
-  bootstrap(AppComponent);
+  bootstrap(AppComponent, [
+    materialProviders
+  ]);
 }

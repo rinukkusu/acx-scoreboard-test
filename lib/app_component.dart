@@ -8,8 +8,10 @@ import 'package:angular_components/angular_components.dart';
   selector: 'my-app',
   styleUrls: const ['app_component.css'],
   templateUrl: 'app_component.html',
-  directives: const [materialDirectives],
-  providers: const [materialProviders],
+  directives: const [
+    ScoreboardComponent,
+    ScorecardComponent
+  ]
 )
 class AppComponent {
   ScoreboardType type = ScoreboardType.toggle;
