@@ -1,0 +1,37 @@
+<acx-scoreboard enableUniformWidths="true" [type]="type">
+    <acx-scorecard
+        selectable
+        [selected]="card1"
+        (selectedChange)="card1 = $event"
+        label="Card 1"
+        value="1"
+        description="xxx"
+        suggestionAfter="- some suggestion"
+    ><div>Test</div></acx-scorecard>
+    <acx-scorecard
+        selectable
+        [selected]="card2"
+        (selectedChange)="card2 = $event"
+        label="Card 2"
+        value="2"
+        description="xxx"
+        suggestionAfter="- some suggestion"
+    ><div>Test</div></acx-scorecard>
+    <acx-scorecard
+        selectable
+        [selected]="card3"
+        (selectedChange)="card3 = $event"
+        label="Card 3"
+        value="3"
+        description="xxx"
+        suggestionAfter="- some suggestion"
+    ><div>Test</div></acx-scorecard>
+</acx-scoreboard>
+
+<div>
+    <ul>
+        <li *ngIf="card1">Card 1 toggled!</li>
+        <li *ngIf="card2">Card 2 toggled!</li>
+        <li *ngIf="card3">Card 3 toggled!</li>
+    </ul>
+</div>

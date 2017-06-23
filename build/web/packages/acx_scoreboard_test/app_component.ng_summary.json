@@ -1,0 +1,69 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular_components/angular_components.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "AppComponent",
+        "7": [
+          {
+            "2": "ScoreboardComponent"
+          },
+          {
+            "2": "ScorecardComponent"
+          }
+        ]
+      }
+    ],
+    "6": "app_component.dart"
+  },
+  "type": {
+    "AppComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "my-app",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "AppComponent",
+        "moduleUrl": "asset:acx_scoreboard_test/lib/app_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<acx-scoreboard enableUniformWidths=\"true\" [type]=\"type\">\n    <acx-scorecard\n        selectable\n        [selected]=\"card1\"\n        (selectedChange)=\"card1 = $event\"\n        label=\"Card 1\"\n        value=\"1\"\n        description=\"xxx\"\n        suggestionAfter=\"- some suggestion\"\n    ><div>Test</div></acx-scorecard>\n    <acx-scorecard\n        selectable\n        [selected]=\"card2\"\n        (selectedChange)=\"card2 = $event\"\n        label=\"Card 2\"\n        value=\"2\"\n        description=\"xxx\"\n        suggestionAfter=\"- some suggestion\"\n    ><div>Test</div></acx-scorecard>\n    <acx-scorecard\n        selectable\n        [selected]=\"card3\"\n        (selectedChange)=\"card3 = $event\"\n        label=\"Card 3\"\n        value=\"3\"\n        description=\"xxx\"\n        suggestionAfter=\"- some suggestion\"\n    ><div>Test</div></acx-scorecard>\n</acx-scoreboard>\n\n<div>\n    <ul>\n        <li *ngIf=\"card1\">Card 1 toggled!</li>\n        <li *ngIf=\"card2\">Card 2 toggled!</li>\n        <li *ngIf=\"card3\">Card 3 toggled!</li>\n    </ul>\n</div>",
+        "templateUrl": "asset:acx_scoreboard_test/lib/app_component.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:acx_scoreboard_test/lib/app_component.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
